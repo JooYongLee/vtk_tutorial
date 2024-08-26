@@ -9,6 +9,14 @@ RESOURCE_PATH = './assets'
 DCM_DATA_PATH = 'D:/dataset/CT_SCAN_RAW_DATA/김미란/김미란_2022.10/36843_221021143823/CTData'
 
 
+
+def test_func121212121():
+    pass
+
+
+
+
+
 def test_dcm_read():
     assert os.path.exists(DCM_DATA_PATH)
     # path = 'D:/dataset/TeethSegmentation/marker_set(only2class)/sample1/17/CT_김명래 ct'
