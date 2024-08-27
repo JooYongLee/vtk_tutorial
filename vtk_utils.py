@@ -14,7 +14,7 @@ import os
 from packaging import version as packversion
 
 def test_code():
-    print('123')
+    print('abc')
     print('456')
     print('789')
 
