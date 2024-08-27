@@ -1,7 +1,7 @@
 #ifndef PCA_H_
 #define PCA_H_
 #include <Eigen/Dense>
-// 파이썬 sklearn 네이밍과 유사하게 작성함
+
 class PCA
 {
 public:	
