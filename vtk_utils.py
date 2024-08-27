@@ -13,8 +13,10 @@ import os
 # from importlib.metadata import version as libversion
 from packaging import version as packversion
 
-def jamonda():
+def main_test():
+    print('show me the money')
     print('jaja')
+    print('food for thought')
 def test_code():
     print('abc')
     print('456')
