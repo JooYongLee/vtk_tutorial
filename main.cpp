@@ -5,6 +5,8 @@
 
 
 
+
+
 #include <plog/Log.h>
 #include <plog/Init.h>
 #include <plog/Formatters/TxtFormatter.h>
@@ -29,7 +31,7 @@
 #include <sstream>
 #include <string>
 
-// Å¬·¡½º Á¤ÀÇ
+// Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 class PrintfStream {
 public:
 
@@ -45,26 +47,26 @@ public:
         , maxSeverity(val)
     {};
     std::string serverity;
-    // << ¿¬»êÀÚ ¿À¹ö·Îµù
+    // << ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½
     template<typename T>
     PrintfStream& operator<<(const T& value) {
         oss << value;
         return *this;
     }
 
-    // << ¿¬»êÀÚ ¿À¹ö·Îµù (¸Å´ÏÇ½·¹ÀÌÅÍ Áö¿ø)
+    // << ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½ (ï¿½Å´ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
     PrintfStream& operator<<(std::ostream& (*manip)(std::ostream&)) {
         oss << manip;
         return *this;
     }
 
-    // ¼Ò¸êÀÚ¿¡¼­ printf È£Ãâ
+    // ï¿½Ò¸ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ printf È£ï¿½ï¿½
     ~PrintfStream() {
         printf("[%s]%s", serverity.c_str(), oss.str().c_str());
     }
 };
 
-// ¸ÅÅ©·Î Á¤ÀÇ
+// ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 #define PRINTF_STRINGIFY PrintfStream("none", PrintfStream::serverity::none)
 #define PRINTF_LOGF PrintfStream("fatal")
 
@@ -82,7 +84,7 @@ public:
 
 
 // 
-// // »ç¿ëÀÚ Á¤ÀÇ Å¬·¡½º¿¡ ´ëÇÑ << ¿¬»êÀÚ ¿À¹ö·Îµù
+// // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ << ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½
 std::ostream& operator<<(std::ostream& os, const MyClass& obj) {
     os << "MyClass(id: " << obj.value << ", name: " << obj.name << ")";
     return os;
@@ -107,7 +109,7 @@ int main() {
     MyClass myObj(42);
 
     //PrintfStream::serverity::
-    // ¸ÅÅ©·Î »ç¿ë ¿¹Á¦
+    // ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     PRINTF_STRINGIFY << "The value of x is: " << x << ", str is: " << str << ", and pi is: " << pi << "ojb" << myObj << "\n";
     PRINTF_LOGF << "The value of x is: " << x << ", str is: " << str << ", and pi is: " << pi << "ojb" << myObj  << "\n";
 
