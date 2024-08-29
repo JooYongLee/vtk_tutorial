@@ -8,7 +8,8 @@ import numpy as np
 RESOURCE_PATH = './assets'
 DCM_DATA_PATH = 'D:/dataset/CT_SCAN_RAW_DATA/김미란/김미란_2022.10/36843_221021143823/CTData'
 
-
+def main():
+    print('abc show me the money')
 
 def test_func121212121():
     pass
