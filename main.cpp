@@ -14,7 +14,7 @@
 //#define LOGI std::stringstream ss;\
 //ss
 
-#/*else
+
 #   define IF_PLOG_(instanceId, severity)   if (!plog::get<instanceId>() || !plog::get<instanceId>()->checkSeverity(severity)) {;} else
 #endif
 
@@ -30,6 +30,11 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+
+void testfun()
+{
+std::cout << "hello";
+}
 
 // Ŭ���� ����
 class PrintfStream {
