@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 
+
 def draw_vector(v0, v1, ax=None, color='r'):
     ax1 = ax or plt.gca()
 
