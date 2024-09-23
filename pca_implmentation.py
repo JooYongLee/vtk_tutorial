@@ -10,6 +10,8 @@ def draw_vector(v0, v1, ax=None, color='r'):
                       shrinkA=0, shrinkB=0, color=color)
     ax1.annotate('', v1, v0, arrowprops=arrowprops)
 
+
+
 def pca_compare():
     # cov = [[2, 8], [8, 100]]
     # mean = [0, 2]
