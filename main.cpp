@@ -36,6 +36,11 @@ void testfun()
 std::cout << "hello";
 }
 
+void testfun22()
+{
+std::cout << "hello";
+}
+
 // Ŭ���� ����
 class PrintfStream {
 public:
