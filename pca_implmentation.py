@@ -22,6 +22,8 @@ def pca_compare():
 
 
 
+
+
     fig = plt.figure()
     ax = fig.add_subplot(111)
 
