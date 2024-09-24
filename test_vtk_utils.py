@@ -11,6 +11,12 @@ DCM_DATA_PATH = 'D:/dataset/CT_SCAN_RAW_DATA/김미란/김미란_2022.10/36843_2
 def main():
     print('abc show me the money')
 
+def proof():
+    pass
+
+def test():
+    pass
+
 
 
 
