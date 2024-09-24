@@ -13,6 +13,14 @@ def main():
 
 
 
+def proof():
+    pass
+
+def test():
+    pass
+
+
+
 
 
 def test_func121212121():
