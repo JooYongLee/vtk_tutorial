@@ -20,7 +20,11 @@ def test_func121212121():
 
 
 
+def abc():
+    pass
 
+def defdef():
+    pass
 
 
 
