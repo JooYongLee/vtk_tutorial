@@ -16,6 +16,10 @@
 //#define LOGI std::stringstream ss;\
 //ss
 
+void test()
+{}
+
+
 #/*else
 #   define IF_PLOG_(instanceId, severity)   if (!plog::get<instanceId>() || !plog::get<instanceId>()->checkSeverity(severity)) {;} else
 #endif
