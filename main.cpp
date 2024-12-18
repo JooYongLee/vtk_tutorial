@@ -11,6 +11,8 @@ void testabc()
 std::cout << "";
 std::cout << "";
 std::cout << "";
+
+printf("yosi");
 }
 
 
