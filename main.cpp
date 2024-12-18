@@ -37,6 +37,10 @@ void test()
 #include <sstream>
 #include <string>
 
+void coke()
+{
+}
+
 // Ŭ���� ����
 class PrintfStream {
 public:
