@@ -15,6 +15,8 @@ std::cout << "";
 printf("yosi");
 }
 
+void print()
+{}
 
 
 #include <plog/Log.h>
