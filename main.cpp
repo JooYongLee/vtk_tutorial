@@ -151,34 +151,5 @@ int main() {
     PRINTF_STRINGIFY << "The value of x is: " << x << ", str is: " << str << ", and pi is: " << pi << "ojb" << myObj << "\n";
     PRINTF_LOGF << "The value of x is: " << x << ", str is: " << str << ", and pi is: " << pi << "ojb" << myObj  << "\n";
 
-    //static plog::ColorConsoleAppender<plog::TxtFormatter> consoleAppender;
-    //plog::init(plog::verbose, &consoleAppender);
-    //plog::get
-    //// Log severity levels are printed in different colors.
-    //PLOG_VERBOSE << "This is a VERBOSE message";
-    //PLOG_DEBUG << "This is a DEBUG message";
-    //PLOG_INFO << "This is an INFO message";
-    //PLOG_WARNING << "This is a WARNING message";
-    //PLOG_ERROR << "This is an ERROR message";
-    //LOGF << "This is a FATAL message";
-
-
-
-    //plog::init(plog::debug, "Hello.txt"); // Step2: initialize the logger.
-
-// Step3: write log messages using a special macro. There are several log macros, use the macro you liked the most.
-
-    // Use std::stringstream to capture the output
-    std::stringstream ss;
-    ss << myObj;
-
-    // Convert the stringstream to a string
-    std::string result = ss.str();
-
-    // Output the result to console for demonstration
-    std::cout << result << std::endl;
-
-    printf(result.c_str());
-
     return 0;
 }
