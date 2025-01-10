@@ -3,56 +3,6 @@
 #include <sstream>
 #include <string>
 
-void pinrt()
-{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-void testabc()
-{
-
-std::cout << "";
-std::cout << "";
-std::cout << "";
-
-printf("yosi");
-}
-
-void print()
-{}
-
-
-#include <plog/Log.h>
-#include <plog/Init.h>
-#include <plog/Formatters/TxtFormatter.h>
-#include <plog/Appenders/ColorConsoleAppender.h>
-//#define LOGI std::stringstream ss;\
-//ss
-
-void test()
-{}
-
-
-#/*else
-#   define IF_PLOG_(instanceId, severity)   if (!plog::get<instanceId>() || !plog::get<instanceId>()->checkSeverity(severity)) {;} else
-#endif
-
-#define IF_PLOG(severity)                IF_PLOG_(PLOG_DEFAULT_INSTANCE_ID, severity)*/
 
 //////////////////////////////////////////////////////////////////////////
 // Main logging macros
