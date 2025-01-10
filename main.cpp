@@ -3,6 +3,12 @@
 #include <sstream>
 #include <string>
 
+void printabc()
+{
+    std::cout << "hellow";
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////
 // Main logging macros
