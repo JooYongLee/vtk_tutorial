@@ -5,14 +5,6 @@
 
 void printabc()
 {
-    std::cout << "hellow";
-    std::cout << "hellow";
-
-    std::cout << "hellow";
-    std::cout << "i love rim";
-    std::cout << "i love rim";
-    std::cout << "i love rim";
-    std::cout << "hellow";
 
 
 
