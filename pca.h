@@ -9,6 +9,7 @@ public:
 
 	~PCA() = default;
 
+
 	bool compute();
 
 	Eigen::MatrixXd& components() { return _components; } 
