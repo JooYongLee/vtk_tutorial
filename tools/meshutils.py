@@ -11,6 +11,7 @@ except Exception as e:
     logger.error(e)
     logger.error("cannot use remesh(pyacvd)")
 
+
 from . import vtk_utils
 numpy_support = vtk_utils.numpy_support
 # from vtk.util import numpy_support
