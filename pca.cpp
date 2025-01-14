@@ -9,6 +9,8 @@ PCA::PCA(Eigen::MatrixXd &m)
 
 
 
+
+
 bool PCA::compute()
 {
 	Eigen::MatrixXd aligned = _dat.rowwise() - _dat.colwise().mean();
